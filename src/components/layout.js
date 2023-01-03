@@ -1,5 +1,6 @@
-import * as React from 'react'
-import { graphql, Link, useStaticQuery } from 'gatsby'
+import * as React from "react"
+import { graphql, Link, useStaticQuery } from "gatsby"
+import "./layout.css"
 
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
@@ -12,24 +13,88 @@ const Layout = ({ pageTitle, children }) => {
     }
   `)
   return (
-    <div>
-      <title>{data.site.siteMetadata.title}</title>
-      <nav>
-        <h1>{data.site.siteMetadata.title}</h1>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/xenoblade-chronicles">Xenoblade Chronicles</Link></li>
-          <li><Link to="/xenoblade-chronicles-2">Xenoblade Chronicles 2</Link></li>
-          <li><Link to="/xenoblade-chronicles-3">Xenoblade Chronicles 3</Link></li>
-          <li><Link to="/xenoblade-chronicles-x">Xenoblade Chronicles X</Link></li>
-        </ul>
-      </nav>
-      <main>
-        <h1>{pageTitle}</h1>
+    <section className="Wrapper">
+        <title>{data.site.siteMetadata.title} | {pageTitle}</title>
+        <nav className="Navbar">
+          <h1>
+            <Link
+              to="/"
+              activeStyle={{
+                color: "white",
+              }}
+              className="NavbarTitle"
+            >
+              {data.site.siteMetadata.title}
+            </Link>
+          </h1>
+          <Link
+            to="/about"
+            activeStyle={{
+              color: "white",
+              backgroundColor: "blue",
+            }}
+            className="NavbarItem"
+          >
+            About
+          </Link>
+          <Link
+            to="/contact"
+            activeStyle={{
+              color: "white",
+              backgroundColor: "blue",
+            }}
+            className="NavbarItem"
+          >
+            Contact us
+          </Link>
+          <Link
+            to="/xenoblade-chronicles"
+            activeStyle={{
+              color: "white",
+              backgroundColor: "blue",
+            }}
+            className="NavbarItem"
+          >
+            Xenoblade Chronicles
+          </Link>
+          <Link
+            to="/xenoblade-chronicles-2"
+            activeStyle={{
+              color: "white",
+              backgroundColor: "blue",
+            }}
+            className="NavbarItem"
+          >
+            Xenoblade Chronicles 2
+          </Link>
+          <Link
+            to="/xenoblade-chronicles-3"
+            activeStyle={{
+              color: "white",
+              backgroundColor: "blue",
+            }}
+            className="NavbarItem"
+          >
+            Xenoblade Chronicles 3
+          </Link>
+          <Link
+            to="/xenoblade-chronicles-x"
+            activeStyle={{
+              color: "white",
+              backgroundColor: "blue",
+            }}
+            className="NavbarItem"
+          >
+            Xenoblade Chronicles X
+          </Link>
+        </nav>
+      <section className="ContentWrapper">
         {children}
-      </main>
-    </div>
+      </section>
+      <div className="Footer">
+        <div><p>Website made by Bob Hereijgers</p><p>Images belong to Nintendo™ & Monolithsoft™</p></div>
+      </div>
+    </section>
   )
 }
 

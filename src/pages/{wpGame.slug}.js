@@ -15,6 +15,7 @@ const GamePage = ({
 <GatsbyImage image={image} alt={game.gameplayImages.altText} />
         <h3>{game.title}</h3>
         <p>{game.description }</p>
+        <p>test</p>
         <p>protagonist: {game.protagonist}</p>
         <p>antagonist: {game.antagonist}</p>
         <p>Best Song: {game.bestSong}</p>

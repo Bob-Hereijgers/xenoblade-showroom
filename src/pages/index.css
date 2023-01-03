@@ -1,0 +1,80 @@
+h1 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Wrapper {
+    background: rgb(69,16,113);
+    background: radial-gradient(circle, rgba(69,16,113,1) 0%, rgba(69,16,113,1) 79%, rgba(255,255,255,1) 93%, rgba(255,255,255,1) 100%);
+}
+
+.HomepageImage {
+    size: 100px;
+}
+
+.HomepageDescriptionContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.HomepageDescription{
+    width: 50vw;
+    font-size:x-large;
+}
+
+.HomepageTitleContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.Title {
+    color: white;
+    font-size: 2.3em;
+}
+
+.ReferenceContainer {
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+.FeaturedGame {
+    display: block;
+    width: 100%;
+}
+
+.Video {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+iframe {
+    border: violet 2px solid;
+    border-radius: 200;
+}
+
+.Item {
+    border-radius: 10px;
+    padding: 0.75rem;
+    background-color: rgb(99, 76, 163);
+}
+
+.DescriptionLink {
+    text-decoration: none;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}
+
+.DescriptionLinkBox {
+    display: inline;
+    margin: 0.33rem;
+}
