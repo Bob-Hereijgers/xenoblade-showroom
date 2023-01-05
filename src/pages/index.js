@@ -3,6 +3,9 @@ import Layout from "../components/layout"
 import "./index.css"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { graphql, Link } from "gatsby"
+import Featured from "../components/Featured"
+
+
 
 const IndexPage = ({
   data: {
@@ -15,6 +18,7 @@ const IndexPage = ({
   //Image taken from Xenoblade Wiki, originally from Xenoblade Chronicles 3 made by Nintendo™ & Monolithsoft™
   const Logo = getImage(homePage.featuredGame.localFile)
   //Image taken from Xenoblade Wiki, originally from Xenoblade Chronicles 3 made by Nintendo™ & Monolithsoft™
+
   return (
     <section>
       <div>
@@ -35,31 +39,11 @@ const IndexPage = ({
                 <Link className="DescriptionLink" to="/about">About Page.</Link>
               </div>
             </div>
-
             <div className="HomepageImage">
               <GatsbyImage image={Mio} altText={homePage.picture2.altText} />
             </div>
           </div>
-          <div className="ReferenceContainer">
-            <h1 id="FeaturedGame" className="Title">
-              Check out the first game here!
-            </h1>
-            <Link to="/xenoblade-chronicles">
-              <GatsbyImage
-                image={Logo}
-                altText={homePage.picture2.altText}
-                to="/xenoblade-chronicles"
-              />
-            </Link>
-          </div>
-          <div className="Video">
-            <iframe
-              width="928"
-              height="522"
-              src="https://www.youtube.com/embed/Yv8GhFFgoJo?autoplay=1&mute=1&controls=0&loop=1"
-              title="Welcome to the world of Xenoblade Chronicles"
-            ></iframe>
-          </div>
+         <Featured homePage={homePage} Logo={Logo}/>
         </Layout>
       </div>
     </section>

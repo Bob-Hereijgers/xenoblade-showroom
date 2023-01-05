@@ -19,14 +19,12 @@ const Layout = ({ pageTitle, children }) => {
           <h1>
             <Link
               to="/"
-              activeStyle={{
-                color: "white",
-              }}
               className="NavbarTitle"
             >
               {data.site.siteMetadata.title}
             </Link>
           </h1>
+          <div className="NavBox">
           <Link
             to="/about"
             activeStyle={{
@@ -48,45 +46,16 @@ const Layout = ({ pageTitle, children }) => {
             Contact us
           </Link>
           <Link
-            to="/xenoblade-chronicles"
+            to="/games"
             activeStyle={{
               color: "white",
               backgroundColor: "blue",
             }}
             className="NavbarItem"
           >
-            Xenoblade Chronicles
+            List of Games
           </Link>
-          <Link
-            to="/xenoblade-chronicles-2"
-            activeStyle={{
-              color: "white",
-              backgroundColor: "blue",
-            }}
-            className="NavbarItem"
-          >
-            Xenoblade Chronicles 2
-          </Link>
-          <Link
-            to="/xenoblade-chronicles-3"
-            activeStyle={{
-              color: "white",
-              backgroundColor: "blue",
-            }}
-            className="NavbarItem"
-          >
-            Xenoblade Chronicles 3
-          </Link>
-          <Link
-            to="/xenoblade-chronicles-x"
-            activeStyle={{
-              color: "white",
-              backgroundColor: "blue",
-            }}
-            className="NavbarItem"
-          >
-            Xenoblade Chronicles X
-          </Link>
+          </div>
         </nav>
       <section className="ContentWrapper">
         {children}
