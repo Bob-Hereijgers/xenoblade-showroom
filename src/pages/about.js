@@ -12,20 +12,18 @@ const AboutPage = () => {
           <h1 className="AboutTitle">About Us</h1>
           <div className="AboutContainer">
             <p className="About">
-              Cras id tortor quis eros laoreet condimentum vitae sed risus.
-              Etiam eget malesuada libero. Aliquam interdum gravida ultricies.
-              Vestibulum ultrices tempor sagittis. Cras ut pulvinar neque. Nunc
-              ex dolor, porta a arcu eu, tincidunt euismod mauris. Pellentesque
-              habitant morbi tristique senectus et netus et malesuada fames ac
-              turpis egestas. Mauris euismod, turpis vel maximus fermentum,
-              dolor nisi sodales nulla, vel fringilla odio magna vitae tortor.
-              Nunc in volutpat felis. Aenean elementum elementum sapien id
-              tincidunt. Donec at lacinia erat, bibendum ornare est. Sed
-              elementum, justo id blandit venenatis, tortor risus feugiat lorem,
-              ullamcorper eleifend nisl lectus ut quam. Mauris nec fringilla
-              purus, sed iaculis purus. Curabitur rhoncus lectus elit, eu
-              scelerisque urna fringilla in. Etiam ultrices ex quis viverra
-              rhoncus.
+              I decided to make this project about Xenoblade Chronicles because
+              the third game is coming out this year and I am still obsessed
+              with it. But also because it's a series that means a lot to me as
+              a person. Ever since I saw a playthrough of the first game in
+              2014. Over time my love for the series only grew with every entry,
+              this is one of the few series period where I can definetly say
+              there are no bad entries whatsoever. I would also like to note
+              that I know the styling doesn't look all too good. My forté isn't
+              really in the front end of things yet, I've got many things to
+              learn. While it was a difficult semester for me it was also one I
+              learned a lot in. <br /> <br />
+              -Bob Hereijgers
             </p>
             <StaticImage
               src="../images/Monolithsoft_logo.webp"

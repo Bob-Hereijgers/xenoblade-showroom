@@ -1,0 +1,26 @@
+.Form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 30vw;
+}
+
+.Message {
+    height: 10vw;
+}
+
+.Input {
+    margin: 1vw;
+    font-size: medium;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ContactTitle {
+    margin: auto;
+    font-size: large;
+}
+
+.FormContainer {
+    display: flex;
+    flex-direction: column;
+}

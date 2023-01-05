@@ -10,7 +10,7 @@ const GamePage = ({
   },
 }) => {
   const image = getImage(game.gameplayImages.localFile)
-  const reviews = game.reviews.split(",")
+  const reviews = game.reviews.split("-")
   return (
     <Layout pageTitle="Game Template">
       <div>
@@ -33,7 +33,7 @@ const GamePage = ({
         </div>
         <div className="Songs">
           <div>
-            <p>Best Area Theme:</p>
+            <p className="SongTitle">Best Area Theme:</p>
             <iframe
               width="528"
               height="297"
@@ -42,7 +42,7 @@ const GamePage = ({
             />
           </div>
           <div>
-            <p>Best Battle Theme:</p>
+            <p className="SongTitle">Best Battle Theme:</p>
             <iframe
               width="528"
               height="297"
@@ -53,8 +53,8 @@ const GamePage = ({
         </div>
         <div className="ReviewContainer">
           <p className="Review">{reviews[0]}</p>
-          <p className="Review">{reviews[1]}</p>
-          <p className="Review">{reviews[2]}</p>
+        { reviews[1] ? <p className="Review">{reviews[1]}</p> : null}
+        { reviews[2] ? <p className="Review">{reviews[2]}</p> : null}
         </div>
       </div>
     </Layout>

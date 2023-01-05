@@ -6,7 +6,6 @@ h1 {
 
 p {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
     font-size: large;
 }
 
@@ -84,4 +83,11 @@ justify-self: center;
 .ReviewContainer {
     display: flex;
     justify-content: space-evenly;
+}
+
+.SongTitle {
+    padding: 0.75vw 1.5vw 0.75vw 1.5vw;
+    border-radius: 10px;
+    background-color: rgb(99, 76, 163);
+    width: max-content;
 }
