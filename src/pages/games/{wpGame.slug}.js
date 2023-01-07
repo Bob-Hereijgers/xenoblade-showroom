@@ -1,5 +1,5 @@
 import * as React from "react"
-import Layout from "../components/layout"
+import Layout from "../../components/layout"
 import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import "./game.css"
@@ -55,6 +55,7 @@ const GamePage = ({
           <p className="Review">{reviews[0]}</p>
         { reviews[1] ? <p className="Review">{reviews[1]}</p> : null}
         { reviews[2] ? <p className="Review">{reviews[2]}</p> : null}
+        { reviews[3] ? <p className="Review">{reviews[3]}</p> : null}
         </div>
       </div>
     </Layout>
